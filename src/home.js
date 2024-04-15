@@ -3,9 +3,11 @@ export function createHomePage() {
 
   const heroSection = createHero();
   const aboutSection = createAbout();
+  const menuSection = createMenu();
 
   mainElement.appendChild(heroSection);
   mainElement.appendChild(aboutSection);
+  mainElement.appendChild(menuSection);
 }
 
 function createHero() {
@@ -35,7 +37,7 @@ function createAbout() {
   aboutSection.classList.add("about");
 
   const heading = document.createElement("h2");
-  heading.textContent = "About us";
+  heading.textContent = "Our story";
 
   const copy = document.createElement("p");
   copy.innerHTML =
@@ -45,4 +47,16 @@ function createAbout() {
   aboutSection.appendChild(copy);
 
   return aboutSection;
+}
+
+function createMenu() {
+  const menuSection = document.createElement("section");
+  menuSection.classList.add("menu");
+
+  const heading = document.createElement("h2");
+  heading.textContent = "Our menu";
+
+  menuSection.appendChild(heading);
+
+  return menuSection;
 }

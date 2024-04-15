@@ -83,7 +83,8 @@ button {
     transform: scale(.99);
 }
 
-section.about {
+section.about,
+section.menu {
     width: 55%;
     margin: 0 auto;
     padding: 15px 0;
