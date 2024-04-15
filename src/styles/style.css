@@ -14,12 +14,16 @@
 body {
     font-family: "Roboto", Helvetica, sans-serif;
     background-color: var(--light-clr);
-    width: 100dvw;
 }
 
-section {
-    padding: 15px 0;
+main {
     width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    font-weight: 500;
 }
 
 .hero {
@@ -27,7 +31,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80dvh;
-    max-width: 100dvw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,11 +69,7 @@ section {
 section.about {
     width: 55%;
     margin: 0 auto;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin: 15px 0;
+    padding: 15px 0;
 }
 
 .about p {
