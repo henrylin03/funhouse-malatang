@@ -1,8 +1,7 @@
-import "./styles/normalise.css";
-import "./styles/style.css";
+import "./style.css";
 import hotpotImagePath from "./assets/hotpot.jpg";
 
-function component() {
+export function component() {
   const element = document.createElement("div");
 
   // Lodash, now imported by this script
