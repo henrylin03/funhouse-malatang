@@ -14,18 +14,20 @@
 body {
     font-family: "Roboto", Helvetica, sans-serif;
     background-color: var(--light-clr);
+    width: 100dvw;
 }
 
 section {
     padding: 15px 0;
+    width: 100%;
 }
 
 .hero {
     background-image: url("../assets/hotpot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100dvw;
     min-height: 80dvh;
+    max-width: 100dvw;
     display: flex;
     align-items: center;
     justify-content: center;
