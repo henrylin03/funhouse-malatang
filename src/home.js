@@ -1,7 +1,11 @@
 export function createHomePage() {
   const mainElement = document.querySelector("main");
+  const heroSection = createHero();
 
-  // hero
+  mainElement.appendChild(heroSection);
+}
+
+function createHero() {
   const heroSection = document.createElement("section");
   heroSection.classList.add("hero");
 
@@ -19,5 +23,6 @@ export function createHomePage() {
   heroInnerContainer.appendChild(heroText);
   heroInnerContainer.appendChild(ctaBtn);
   heroSection.appendChild(heroInnerContainer);
-  mainElement.appendChild(heroSection);
+
+  return heroSection;
 }
