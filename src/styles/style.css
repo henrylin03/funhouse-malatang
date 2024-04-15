@@ -64,3 +64,11 @@ section {
 section.about {
     width: 55%;
 }
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.about p {
+    line-height: 1.5rem;
+}
