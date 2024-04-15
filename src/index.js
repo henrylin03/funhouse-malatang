@@ -1,6 +1,6 @@
 import _ from "lodash";
 import "./style.css";
-import hotpotImagePath from "./hotpot.jpg";
+import hotpotImagePath from "./assets/hotpot.jpg";
 
 function component() {
   const element = document.createElement("div");

@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/roboto/Roboto-Regular.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 .hello {
     color: red;
-    background: url(./hotpot.jpg);
+    background: url("./assets/hotpot.jpg");
+    font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
 }
