@@ -76,11 +76,13 @@ button {
 
 .hero .cta:hover {
     filter: brightness(1.05);
+    box-shadow: none;
 }
 
 .hero .cta:active {
     filter: brightness(.98);
     transform: scale(.99);
+    box-shadow: none;
 }
 
 section.about {
