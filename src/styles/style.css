@@ -18,6 +18,7 @@ body {
 
 main {
     width: 100%;
+    text-wrap: pretty;
 }
 
 h2 {
