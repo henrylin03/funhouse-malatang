@@ -16,6 +16,10 @@ body {
     background-color: var(--light-clr);
 }
 
+section {
+    padding: 15px 0;
+}
+
 .hero {
     background-image: url("../assets/hotpot.jpg");
     background-repeat: no-repeat;
@@ -55,4 +59,8 @@ body {
     border-radius: 15px;
     background-color: var(--primary-clr);
     color: white;
+}
+
+section.about {
+    width: 55%;
 }

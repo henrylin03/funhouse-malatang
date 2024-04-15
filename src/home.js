@@ -44,4 +44,6 @@ function createAbout() {
 
   aboutSection.appendChild(heading);
   aboutSection.appendChild(copy);
+
+  return aboutSection;
 }
