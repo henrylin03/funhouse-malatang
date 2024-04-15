@@ -1,7 +1,6 @@
-import "./style.css";
 import hotpotImagePath from "./assets/hotpot.jpg";
 
-export function component() {
+export function load() {
   const element = document.createElement("div");
 
   // Lodash, now imported by this script
@@ -15,7 +14,5 @@ export function component() {
 
   console.log("hello");
 
-  return element;
+  document.body.appendChild(element);
 }
-
-document.body.appendChild(component());
