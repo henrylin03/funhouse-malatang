@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .hero h1 {
@@ -43,7 +43,7 @@ body {
     line-height: 6rem;
     font-weight: 700;
     color: var(--light-clr);
-    text-shadow: 3px 3px 1px 4px var(--primary-clr);
+    text-shadow: 3px 5px 2px var(--primary-clr);
 }
 
 .hero .cta {
@@ -54,5 +54,5 @@ body {
     font-weight: 700;
     border-radius: 15px;
     background-color: var(--primary-clr);
-    color: var(--light-clr);
+    color: white;
 }
