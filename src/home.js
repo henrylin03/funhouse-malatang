@@ -1,11 +1,21 @@
-import hotpotImagePath from "./assets/hotpot.jpg";
-
 export function createHomePage() {
-  const mainHTML = document.querySelector("main");
+  const mainElement = document.querySelector("main");
+
+  // hero
   const heroSection = document.createElement("section");
   heroSection.classList.add("hero");
 
-  mainHTML.appendChild(heroSection);
+  const heroText = document.createElement("h1");
+  heroText.textContent = "Bringing authentic Malatang from Chongqing to Sydney";
+
+  const ctaBtn = document.createElement("button");
+  ctaBtn.setAttribute("type", "button");
+  ctaBtn.classList.add("cta");
+  ctaBtn.textContent = "Visit us";
+
+  heroSection.appendChild(heroText);
+  heroSection.appendChild(ctaBtn);
+  mainElement.appendChild(heroSection);
 
   // const element = document.createElement("div");
   // // Lodash, now imported by this script
