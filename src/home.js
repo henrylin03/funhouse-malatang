@@ -38,9 +38,8 @@ function createAbout() {
   heading.textContent = "About us";
 
   const copy = document.createElement("p");
-  copy.textContent = `In 1908, a secret soup recipe in Chongqing kickstarted the beginning of Chinese hotpot as we know it. The recipe combined more than a dozen of ingredients and spices, creating the perfect hotpot broth: slightly numbing, moderately spicy but easy on the stomach.
-  ${(<br />)}
-  Fast forward to 2016 when, with the help of a 3rd generation descendant of the recipe holder, Funhouse Malatang was started in Sydney, Australia. Having expanded to three locations, Funhouse continues to share the authentic Chongqing flavours and soul-warming broths to its happy customers.`;
+  copy.innerHTML =
+    "In 1908, a secret soup recipe in Chongqing kickstarted the beginning of Chinese hotpot as we know it. The recipe combined more than a dozen of ingredients and spices, creating the perfect hotpot broth: slightly numbing, moderately spicy but easy on the stomach.<br/><br/>Fast forward to 2016 when, with the help of a 3rd generation descendant of the recipe holder, Funhouse Malatang was started in Sydney, Australia. Having expanded to three locations, Funhouse continues to share the authentic Chongqing flavours and soul-warming broths to its happy customers.";
 
   aboutSection.appendChild(heading);
   aboutSection.appendChild(copy);
