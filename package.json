@@ -172,7 +172,6 @@
     "launch-editor": "^2.6.1",
     "loader-runner": "^4.3.0",
     "locate-path": "^5.0.0",
-    "lodash": "^4.17.21",
     "lower-case": "^2.0.2",
     "lru-cache": "^10.2.0",
     "media-typer": "^0.3.0",
