@@ -5,8 +5,15 @@
     font-style: normal;
 }
 
+:root {
+    --primary-clr: hsl(356, 89%, 45%);
+    --light-clr: #FFF5F1;
+    --dark-clr: #3A001E;
+}
+
 body {
     font-family: "Roboto", Helvetica, sans-serif;
+    background-color: var(--light-clr);
 }
 
 .hero {
@@ -30,18 +37,22 @@ body {
     gap: 15px;
 }
 
-.hero button {
-    font: inherit;
-    border: none;
-    outline: none;
-    padding: 20px 35px;
-    font-weight: 700;
-    border-radius: 15px;
-}
-
 .hero h1 {
     font-size: 4rem;
     text-align: center;
-    line-height: 7rem;
+    line-height: 6rem;
     font-weight: 700;
+    color: var(--light-clr);
+    text-shadow: 3px 3px 1px 4px var(--primary-clr);
+}
+
+.hero .cta {
+    font: inherit;
+    border: none;
+    outline: none;
+    padding: 18px 50px;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: var(--primary-clr);
+    color: var(--light-clr);
 }
