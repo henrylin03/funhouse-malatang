@@ -5,6 +5,9 @@ export function createHomePage() {
   const heroSection = document.createElement("section");
   heroSection.classList.add("hero");
 
+  const heroInnerContainer = document.createElement("div");
+  heroInnerContainer.classList.add("inner");
+
   const heroText = document.createElement("h1");
   heroText.textContent = "Bringing authentic Malatang from Chongqing to Sydney";
 
@@ -13,8 +16,9 @@ export function createHomePage() {
   ctaBtn.classList.add("cta");
   ctaBtn.textContent = "Visit us";
 
-  heroSection.appendChild(heroText);
-  heroSection.appendChild(ctaBtn);
+  heroInnerContainer.appendChild(heroText);
+  heroInnerContainer.appendChild(ctaBtn);
+  heroSection.appendChild(heroInnerContainer);
   mainElement.appendChild(heroSection);
 
   // const element = document.createElement("div");
