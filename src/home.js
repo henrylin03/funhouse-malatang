@@ -1,14 +1,15 @@
 import { createHeader } from "./header";
 
 export function createHomePage() {
-  const header = createHeader();
-
   const mainElement = document.querySelector("main");
+
+  const hero = createHero();
+  mainElement.appendChild(hero);
 }
 
 function createHero() {
-  const section = document.createElement("section");
-  section.classList.add("hero");
+  const heroSection = document.createElement("section");
+  heroSection.classList.add("hero");
 
   const heroInnerContainer = document.createElement("div");
   heroInnerContainer.classList.add("inner");
@@ -23,7 +24,8 @@ function createHero() {
 
   heroInnerContainer.appendChild(heroText);
   heroInnerContainer.appendChild(ctaBtn);
+  heroSection.appendChild(createHeader());
   heroSection.appendChild(heroInnerContainer);
 
-  return section;
+  return heroSection;
 }
