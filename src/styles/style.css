@@ -55,10 +55,6 @@ nav button {
     color: var(--light-pink-clr);
 }
 
-h1 {
-    font-size: 2rem;
-}
-
 .hero .grid {
     width: 800px;
     display: grid;
@@ -68,6 +64,7 @@ h1 {
 }
 
 .hero h1 {
+    font-size: 3rem;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
 }
