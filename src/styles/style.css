@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primary-clr: hsl(356, 89%, 45%);
-    --light-clr: #FFF5F1;
-    --dark-clr: #3A001E;
+    --light-clr: #fff7f5;
+    --dark-clr: hsl(329, 100%, 11%);
+    --accent-clr: hsl(356, 89%, 45%);
+    --light-pink-clr: #ffd5cc;
 }
 
 body {
@@ -16,6 +17,7 @@ button {
     border: none;
     outline: none;
     font: inherit;
+    color: inherit;
 }
 
 /* header */
@@ -26,6 +28,7 @@ header {
     width: 800px;
     margin: 0 auto;
     padding: 25px 10px;
+    color: var(--light-pink-clr);
 }
 
 .logo img {
@@ -48,6 +51,8 @@ nav button {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-color: var(--dark-clr);
+    color: var(--light-pink-clr);
 }
 
 h1 {
