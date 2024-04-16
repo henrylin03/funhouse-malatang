@@ -27,9 +27,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 900px;
     margin: 0 auto;
-    padding: 25px 5px;
+    padding: 25px 10px;
 }
 
 .logo img {
