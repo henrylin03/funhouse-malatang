@@ -65,6 +65,7 @@ nav button {
 
 .hero h1 {
     font-size: 3rem;
+    line-height: 5rem;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
 }
