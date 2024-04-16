@@ -15,6 +15,7 @@ export function createHomePage() {
   const stepsSection = createStepsSection();
 
   mainElement.appendChild(heroSection);
+  mainElement.appendChild(stepsSection);
 }
 
 function createHeroSection() {
@@ -70,6 +71,9 @@ function createHeroSection() {
 }
 
 function createStepsSection() {
+  const section = document.createElement("section");
+  section.setAttribute("id", "steps");
+
   const heading = document.createElement("h2");
   heading.textContent = "How it works";
 
@@ -93,4 +97,29 @@ function createStepsSection() {
       imgSrc: sauceSvg,
     },
   ];
+
+  STEPS.forEach((step, idx) => {
+    const tempDiv = document.createElement("div");
+    tempDiv.classList.add("step");
+
+    const stepNumber = document.createElement("h3");
+    stepNumber.textContent = idx + 1;
+    tempDiv.appendChild(stepNumber);
+
+    const stepDescription = document.createElement("p");
+    stepDescription.textContent = step.description;
+    tempDiv.appendChild(stepDescription);
+
+    const stepImg = new Image();
+    stepImg.src = step.imgSrc;
+    stepImg.setAttribute("width", "20px");
+    tempDiv.appendChild(stepImg);
+
+    grid.appendChild(tempDiv);
+  });
+
+  section.appendChild(heading);
+  section.appendChild(grid);
+
+  return section;
 }
