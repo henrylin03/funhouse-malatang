@@ -1,4 +1,8 @@
+import { createHeader } from "./header";
+
 export function createHomePage() {
+  const header = createHeader();
+
   const mainElement = document.querySelector("main");
 }
 
