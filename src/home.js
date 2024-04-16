@@ -2,6 +2,7 @@ import { createHeader } from "./header";
 import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
+import peopleImg from "./assets/images/people-getting-ingredients.jpg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -39,14 +40,17 @@ function createHero() {
   const imagesContainer = document.createElement("figure");
   const imgTongs = new Image();
   imgTongs.src = tongsAndIngredientsImg;
+  imgTongs.setAttribute("width", "25%");
   const imgHotpot = new Image();
   imgHotpot.src = hotpotImg;
+  imgHotpot.setAttribute("width", "500px");
   const imgIngredients = new Image();
   imgIngredients.src = bowlImg;
+  imgHotpot.setAttribute("width", "25%");
 
   imagesContainer.appendChild(imgTongs);
-  imagesContainer.appendChild(imgIngredients);
   imagesContainer.appendChild(imgHotpot);
+  imagesContainer.appendChild(imgIngredients);
 
   flexContainer.appendChild(textContainer);
   flexContainer.appendChild(ctaDiv);
