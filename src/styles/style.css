@@ -30,6 +30,11 @@ header {
     width: 120px;
 }
 
+nav {
+    display: flex;
+    gap: 15px;
+}
+
 /* main section */
 
 main {
