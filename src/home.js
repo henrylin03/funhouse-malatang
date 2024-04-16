@@ -1,4 +1,10 @@
 import { createHeader } from "./header";
+import ingredientsImg from "./assets/images/ingredients.jpg";
+import meatImg from "./assets/images/meat.jpg";
+import splitBowlImg from "./assets/images/split-soup-bowl.jpg";
+import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
+import hotpotImg from "./assets/images/hotpot.jpg";
+import takeAwayImg from "./assets/images/takeaway.jpg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -23,6 +29,15 @@ function createHero() {
   const btn = document.createElement("button");
   btn.classList.add("cta");
   btn.textContent = "Visit us";
+
+  const images = [
+    ingredientsImg,
+    tongsAndIngredientsImg,
+    meatImg,
+    hotpotImg,
+    splitBowlImg,
+    takeAwayImg,
+  ];
 
   grid.appendChild(bigText);
   grid.appendChild(smallText);
