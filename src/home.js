@@ -30,6 +30,10 @@ function createHero() {
   btn.classList.add("cta");
   btn.textContent = "Visit us";
 
+  grid.appendChild(bigText);
+  grid.appendChild(smallText);
+  grid.appendChild(btn);
+
   const images = [
     ingredientsImg,
     tongsAndIngredientsImg,
@@ -38,10 +42,16 @@ function createHero() {
     splitBowlImg,
     takeAwayImg,
   ];
+  images.forEach((path) => {
+    const imgElement = new Image();
+    imgElement.src = path;
+    imgElement.setAttribute(
+      "alt",
+      "delicious food available at Funhouse Malatang"
+    );
+    grid.appendChild(imgElement);
+  });
 
-  grid.appendChild(bigText);
-  grid.appendChild(smallText);
-  grid.appendChild(btn);
   heroSection.appendChild(createHeader());
   heroSection.appendChild(grid);
 

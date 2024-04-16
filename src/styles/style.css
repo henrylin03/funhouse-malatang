@@ -113,6 +113,9 @@ nav button {
     transform: scale(.99);
 }
 
+.hero .img {
+    grid-row: 3 / -1;
+}
 
 /* main section */
 
