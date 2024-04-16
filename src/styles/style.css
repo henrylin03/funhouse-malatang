@@ -67,8 +67,15 @@ h1 {
     gap: 30px;
 }
 
+.hero h1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
+
 .hero p {
     text-align: right;
+    grid-column: 6 / -1;
+    grid-row: 1 / 2;
 }
 
 .hero .cta {
