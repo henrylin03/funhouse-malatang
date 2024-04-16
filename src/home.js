@@ -43,10 +43,11 @@ function createHero() {
   imgTongs.setAttribute("width", "25%");
   const imgHotpot = new Image();
   imgHotpot.src = hotpotImg;
-  imgHotpot.setAttribute("width", "500px");
+  imgHotpot.setAttribute("width", "200px");
+  imgHotpot.classList.add("centre");
   const imgIngredients = new Image();
   imgIngredients.src = bowlImg;
-  imgHotpot.setAttribute("width", "25%");
+  imgIngredients.setAttribute("width", "25%");
 
   imagesContainer.appendChild(imgTongs);
   imagesContainer.appendChild(imgHotpot);

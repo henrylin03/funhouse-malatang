@@ -118,13 +118,17 @@ nav button {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 10px;
+    gap: 25px;
 }
 
 .hero figure img {
-    flex: 1 1 auto;
+    flex: 1;
     border-radius: 50px;
     border: 5px solid var(--light-pink-clr);
+}
+
+.hero .centre {
+    flex: 3;
 }
 
 /* main section */
