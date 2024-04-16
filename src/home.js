@@ -34,14 +34,14 @@ function createHero() {
   grid.appendChild(smallText);
   grid.appendChild(btn);
 
-  const images = [
-    ingredientsImg,
-    tongsAndIngredientsImg,
-    meatImg,
-    hotpotImg,
-    splitBowlImg,
-    takeAwayImg,
-  ];
+  // const images = [
+  //   ingredientsImg,
+  //   tongsAndIngredientsImg,
+  //   meatImg,
+  //   hotpotImg,
+  //   splitBowlImg,
+  //   takeAwayImg,
+  // ];
   // images.forEach((path) => {
   //   const imgElement = new Image();
   //   imgElement.src = path;

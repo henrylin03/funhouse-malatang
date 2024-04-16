@@ -32,7 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 800px;
+    width: 950px;
     margin: 0 auto;
     padding: 25px 10px;
     color: var(--light-pink-clr);
@@ -62,7 +62,7 @@ nav button {
 }
 
 .hero .grid {
-    width: 800px;
+    width: 950px;
     margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
