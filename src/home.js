@@ -3,15 +3,21 @@ import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
 import peopleImg from "./assets/images/people-getting-ingredients.jpg";
+import tongsImg from "./assets/images/tongs.png";
+import bowlSpoonSvg from "./assets/images/bowl-spoon.svg";
+import soupSvg from "./assets/images/soup.svg";
+import sauceSvg from "./assets/images/sauce.svg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
 
-  const hero = createHero();
-  mainElement.appendChild(hero);
+  const heroSection = createHeroSection();
+  const stepsSection = createStepsSection();
+
+  mainElement.appendChild(heroSection);
 }
 
-function createHero() {
+function createHeroSection() {
   const heroSection = document.createElement("section");
   heroSection.classList.add("hero");
 
@@ -61,4 +67,30 @@ function createHero() {
   heroSection.appendChild(flexContainer);
 
   return heroSection;
+}
+
+function createStepsSection() {
+  const heading = document.createElement("h2");
+  heading.textContent = "How it works";
+
+  const grid = document.createElement("div");
+  grid.classList.add("grid");
+
+  const STEPS = [
+    { description: "Choose your ingredients", imgSrc: tongsImg },
+    {
+      description: "Pick your soup base or go for dry malatang (no soup)",
+      imgSrc: bowlSpoonSvg,
+    },
+    {
+      description:
+        "We'll cook it for you and buzz you when it's ready to collect",
+      imgSrc: soupSvg,
+    },
+    {
+      description:
+        "Add toppings at the self-serve station like peanut sauce or more spice (if you dare!)",
+      imgSrc: sauceSvg,
+    },
+  ];
 }
