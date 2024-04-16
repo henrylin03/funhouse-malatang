@@ -17,54 +17,40 @@ function createHero() {
   const heroSection = document.createElement("section");
   heroSection.classList.add("hero");
 
-  const grid = document.createElement("div");
-  grid.classList.add("grid");
+  const flexContainer = document.createElement("div");
+  flexContainer.classList.add("flex");
 
+  const textContainer = document.createElement("text");
+  textContainer.classList.add("text");
   const bigText = document.createElement("h1");
   bigText.textContent =
     "Choose from the freshest ingredients, served in a soul-warming broth";
   const smallText = document.createElement("p");
   smallText.textContent =
     "Pick from a wide range of meat, vegetables, seafood and other delicious ingredients, then we'll cook it for you in your choice of soup (or no soup) bases";
+
+  textContainer.appendChild(bigText);
+  textContainer.appendChild(smallText);
+
   const btn = document.createElement("button");
   btn.classList.add("cta");
   btn.textContent = "Visit us";
 
-  const imagesContainer = document.createElement("div");
-  imagesContainer.classList.add("images");
+  const imagesContainer = document.createElement("figure");
   const imgOne = new Image();
-  imgOne.src = ingredientsImg;
+  imgOne.src = tongsAndIngredientsImg;
   const imgTwo = new Image();
   imgTwo.src = hotpotImg;
 
   imagesContainer.appendChild(imgOne);
   imagesContainer.appendChild(imgTwo);
 
-  grid.appendChild(bigText);
-  grid.appendChild(smallText);
-  grid.appendChild(btn);
-  grid.appendChild(imagesContainer);
-
-  // const images = [
-  //   ingredientsImg,
-  //   tongsAndIngredientsImg,
-  //   meatImg,
-  //   hotpotImg,
-  //   splitBowlImg,
-  //   takeAwayImg,
-  // ];
-  // images.forEach((path) => {
-  //   const imgElement = new Image();
-  //   imgElement.src = path;
-  //   imgElement.setAttribute(
-  //     "alt",
-  //     "delicious food available at Funhouse Malatang"
-  //   );
-  //   grid.appendChild(imgElement);
-  // });
+  flexContainer.appendChild(textContainer);
+  flexContainer.appendChild(btn);
+  flexContainer.appendChild(imagesContainer);
 
   heroSection.appendChild(createHeader());
-  heroSection.appendChild(grid);
+  heroSection.appendChild(flexContainer);
 
   return heroSection;
 }
