@@ -73,6 +73,7 @@ nav button {
     text-align: right;
     grid-column: 6 / -1;
     grid-row: 1 / 2;
+    align-self: end;
 }
 
 .hero .cta {
