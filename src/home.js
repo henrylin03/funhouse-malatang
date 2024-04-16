@@ -1,10 +1,7 @@
 import { createHeader } from "./header";
-import ingredientsImg from "./assets/images/ingredients.jpg";
-import meatImg from "./assets/images/meat.jpg";
-import splitBowlImg from "./assets/images/split-soup-bowl.jpg";
+import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
-import takeAwayImg from "./assets/images/takeaway.jpg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -20,7 +17,7 @@ function createHero() {
   const flexContainer = document.createElement("div");
   flexContainer.classList.add("flex");
 
-  const textContainer = document.createElement("text");
+  const textContainer = document.createElement("div");
   textContainer.classList.add("text");
   const bigText = document.createElement("h1");
   bigText.textContent =
@@ -32,21 +29,27 @@ function createHero() {
   textContainer.appendChild(bigText);
   textContainer.appendChild(smallText);
 
+  const ctaDiv = document.createElement("div");
+  ctaDiv.classList.add("cta-container");
   const btn = document.createElement("button");
   btn.classList.add("cta");
   btn.textContent = "Visit us";
+  ctaDiv.appendChild(btn);
 
   const imagesContainer = document.createElement("figure");
-  const imgOne = new Image();
-  imgOne.src = tongsAndIngredientsImg;
-  const imgTwo = new Image();
-  imgTwo.src = hotpotImg;
+  const imgTongs = new Image();
+  imgTongs.src = tongsAndIngredientsImg;
+  const imgHotpot = new Image();
+  imgHotpot.src = hotpotImg;
+  const imgIngredients = new Image();
+  imgIngredients.src = bowlImg;
 
-  imagesContainer.appendChild(imgOne);
-  imagesContainer.appendChild(imgTwo);
+  imagesContainer.appendChild(imgTongs);
+  imagesContainer.appendChild(imgIngredients);
+  imagesContainer.appendChild(imgHotpot);
 
   flexContainer.appendChild(textContainer);
-  flexContainer.appendChild(btn);
+  flexContainer.appendChild(ctaDiv);
   flexContainer.appendChild(imagesContainer);
 
   heroSection.appendChild(createHeader());

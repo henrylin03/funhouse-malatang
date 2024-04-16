@@ -67,16 +67,32 @@ nav button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+}
+
+.hero .text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hero h1 {
+    flex: 2;
     font-size: 3rem;
     line-height: 4.2rem;
+    margin: 0;
 }
 
 .hero p {
+    flex: 1;
     line-height: 1.8rem;
     text-align: right;
+}
+
+.hero .cta-container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .hero .cta {
@@ -85,14 +101,10 @@ nav button {
     padding: 18px 50px;
     font-weight: 700;
     border-radius: 50px;
-    height: 50%;
-    width: 80%;
+    width: 160px;
     background-color: var(--accent-clr);
     color: white;
     text-wrap: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero .cta:hover {
@@ -102,6 +114,20 @@ nav button {
 .hero .cta:active {
     filter: brightness(.98);
     transform: scale(.99);
+}
+
+.hero figure {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hero figure img {
+    flex: 1 1 auto;
+    max-width: 25%;
+    border-radius: 50px;
+    border: 10px solid var(--light-pink-clr);
 }
 
 /* main section */
