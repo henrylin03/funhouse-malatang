@@ -30,9 +30,20 @@ function createHero() {
   btn.classList.add("cta");
   btn.textContent = "Visit us";
 
+  const imagesContainer = document.createElement("div");
+  imagesContainer.classList.add("images");
+  const imgOne = new Image();
+  imgOne.src = ingredientsImg;
+  const imgTwo = new Image();
+  imgTwo.src = hotpotImg;
+
+  imagesContainer.appendChild(imgOne);
+  imagesContainer.appendChild(imgTwo);
+
   grid.appendChild(bigText);
   grid.appendChild(smallText);
   grid.appendChild(btn);
+  grid.appendChild(imagesContainer);
 
   // const images = [
   //   ingredientsImg,
