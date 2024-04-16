@@ -42,15 +42,15 @@ function createHero() {
     splitBowlImg,
     takeAwayImg,
   ];
-  images.forEach((path) => {
-    const imgElement = new Image();
-    imgElement.src = path;
-    imgElement.setAttribute(
-      "alt",
-      "delicious food available at Funhouse Malatang"
-    );
-    grid.appendChild(imgElement);
-  });
+  // images.forEach((path) => {
+  //   const imgElement = new Image();
+  //   imgElement.src = path;
+  //   imgElement.setAttribute(
+  //     "alt",
+  //     "delicious food available at Funhouse Malatang"
+  //   );
+  //   grid.appendChild(imgElement);
+  // });
 
   heroSection.appendChild(createHeader());
   heroSection.appendChild(grid);
