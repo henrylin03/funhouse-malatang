@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/open-sans/OpenSans-VariableFont_wdth,wght.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
     --primary-clr: hsl(356, 89%, 45%);
@@ -20,6 +15,7 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
+    font: inherit;
 }
 
 /* header */
