@@ -7,6 +7,12 @@
     --light-pink-clr: #ffd5cc;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Open Sans", Helvetica, sans-serif;
     background-color: var(--light-clr);
@@ -65,12 +71,14 @@ nav button {
 
 .hero h1 {
     font-size: 3rem;
-    line-height: 5rem;
+    line-height: 4.2rem;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
+    align-self: stretchnpm run build;
 }
 
 .hero p {
+    line-height: 1.8rem;
     text-align: right;
     grid-column: 6 / -1;
     grid-row: 1 / 2;
