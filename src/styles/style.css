@@ -16,6 +16,7 @@
 body {
     font-family: "Open Sans", Helvetica, sans-serif;
     background-color: var(--light-clr);
+    text-wrap: pretty;
 }
 
 button {
@@ -33,7 +34,7 @@ header {
     justify-content: space-between;
     width: 800px;
     margin: 0 auto;
-    padding: 25px 10px;
+    padding: 25px 10px 45px 10px;
     color: var(--light-pink-clr);
 }
 
@@ -74,7 +75,8 @@ nav button {
     line-height: 4.2rem;
     grid-column: 1 / 6;
     grid-row: 1 / 2;
-    align-self: stretchnpm run build;
+    align-self: stretch;
+    margin: 0;
 }
 
 .hero p {
@@ -110,7 +112,6 @@ nav button {
 
 main {
     width: 100%;
-    text-wrap: pretty;
 }
 
 h2 {
