@@ -16,6 +16,12 @@ body {
     background-color: var(--light-clr);
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 /* header */
 header {
     display: flex;
@@ -35,6 +41,10 @@ nav {
     gap: 15px;
 }
 
+nav button {
+    background: transparent;
+}
+
 /* main section */
 
 main {
@@ -46,12 +56,6 @@ h2 {
     font-size: 1.5rem;
     margin: 15px 0;
     font-weight: 500;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
 }
 
 .hero {

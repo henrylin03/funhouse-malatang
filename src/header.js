@@ -1,6 +1,7 @@
 import logoPath from "./assets/images/logo.jpg";
 
 export function createHeader() {
+  const header = document.querySelector("header");
   const logoDiv = document.querySelector(".logo");
 
   const logo = new Image();
@@ -11,4 +12,6 @@ export function createHeader() {
   );
 
   logoDiv.appendChild(logo);
+
+  return header;
 }
