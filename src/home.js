@@ -3,7 +3,6 @@ import { createFooter } from "./footer";
 import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
-import peopleImg from "./assets/images/people-getting-ingredients.jpg";
 import tongsImg from "./assets/images/tongs.png";
 import bowlSpoonSvg from "./assets/images/bowl-spoon.svg";
 import soupSvg from "./assets/images/soup.svg";
