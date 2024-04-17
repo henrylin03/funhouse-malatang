@@ -209,20 +209,22 @@ h2 {
     gap: 15px;
 }
 
-#locations h3 {
+#locations .card h3 {
     text-align: center;
     color: var(--accent-clr);
 }
 
-#locations .location-photo {
+#locations .card .location-photo {
     width: 100%;
 }
 
 #locations .card .row {
+    flex: 1;
     display: flex;
+    align-items: flex-start;
     width: 80%;
     margin: 0 auto;
-    gap: 15px;
+    gap: 25px;
 }
 
 #locations .icon {
