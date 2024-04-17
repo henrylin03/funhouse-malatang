@@ -180,3 +180,8 @@ h2 {
 #steps img {
     width: 65px;
 }
+
+#locations .card {
+    background-color: var(--light-clr);
+    border-radius: 25px;
+}
