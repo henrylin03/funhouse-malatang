@@ -159,8 +159,6 @@ function createLocationsSection() {
     grid.appendChild(card);
   });
 
-  locations.forEach((l) => console.log(l));
-
   section.appendChild(heading);
   section.appendChild(grid);
 

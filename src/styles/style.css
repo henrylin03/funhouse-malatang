@@ -192,6 +192,6 @@ h2 {
 }
 
 #locations .card {
-    background-color: var(--light-clr);
+    background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
 }
