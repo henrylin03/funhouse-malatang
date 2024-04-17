@@ -99,22 +99,26 @@ function createStepsSection() {
   ];
 
   STEPS.forEach((step, idx) => {
-    const tempDiv = document.createElement("div");
-    tempDiv.classList.add("step");
+    const tempStepDiv = document.createElement("div");
+    tempStepDiv.classList.add("step");
+
+    const tempTextDiv = document.createElement("div");
+    tempTextDiv.classList.add("text");
 
     const stepNumber = document.createElement("h3");
     stepNumber.textContent = idx + 1;
-    tempDiv.appendChild(stepNumber);
+    tempTextDiv.appendChild(stepNumber);
 
     const stepDescription = document.createElement("p");
     stepDescription.textContent = step.description;
-    tempDiv.appendChild(stepDescription);
+    tempTextDiv.appendChild(stepDescription);
 
     const stepImg = new Image();
     stepImg.src = step.imgSrc;
-    tempDiv.appendChild(stepImg);
 
-    grid.appendChild(tempDiv);
+    tempStepDiv.appendChild(tempTextDiv);
+    tempStepDiv.appendChild(stepImg);
+    grid.appendChild(tempStepDiv);
   });
 
   section.appendChild(heading);
