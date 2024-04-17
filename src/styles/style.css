@@ -133,26 +133,17 @@ nav button {
 }
 
 /* main section */
-
-main {
-    width: 100%;
-}
-
 h2 {
     font-size: 1.5rem;
-    margin: 15px 0;
-    font-weight: 500;
+    font-weight: 700;
+    text-align: center;
 }
 
-
-
-section.about,
-section.menu {
-    width: 55%;
-    margin: 0 auto;
-    padding: 15px 0;
-}
-
-.about p {
-    line-height: 1.5rem;
+#steps {
+    padding: 25px 10px;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
