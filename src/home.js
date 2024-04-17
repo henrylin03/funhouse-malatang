@@ -13,9 +13,11 @@ export function createHomePage() {
 
   const heroSection = createHeroSection();
   const stepsSection = createStepsSection();
+  const locationsSection = createLocationsSection();
 
   mainElement.appendChild(heroSection);
   mainElement.appendChild(stepsSection);
+  mainElement.appendChild(locationsSection);
 }
 
 function createHeroSection() {
@@ -122,6 +124,17 @@ function createStepsSection() {
 
   section.appendChild(heading);
   section.appendChild(grid);
+
+  return section;
+}
+
+function createLocationsSection() {
+  const section = document.createElement("section");
+  section.setAttribute("id", "locations");
+
+  const heading = document.createElement("h3");
+  heading.textContent = "Locations";
+  section.appendChild(heading);
 
   return section;
 }
