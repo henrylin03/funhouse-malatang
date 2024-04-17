@@ -214,6 +214,10 @@ h2 {
     color: var(--accent-clr);
 }
 
-#locations .card img {
+#locations .location-photo {
     width: 100%;
+}
+
+#locations .icon {
+    width: 65px;
 }

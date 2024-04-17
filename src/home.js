@@ -10,6 +10,8 @@ import sauceSvg from "./assets/images/sauce.svg";
 import locations from "./assets/data/locations.json";
 import chatswoodStoreImg from "./assets/images/storeChatswood.jpg";
 import hurstvilleStoreImg from "./assets/images/storeHurstville.jpg";
+import pinIconSvg from "./assets/images/map-pin.svg";
+import phoneIconSvg from "./assets/images/phone.svg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -154,19 +156,32 @@ function createLocationsSection() {
     locationName.textContent = `${l.suburb} Funhouse`;
     card.appendChild(locationName);
 
-    const img = new Image();
-    img.src = locationsImagesLookup[l.suburb];
-    card.appendChild(img);
+    const locationImg = new Image();
+    locationImg.src = locationsImagesLookup[l.suburb];
+    locationImg.classList.add("location-photo");
+    card.appendChild(locationImg);
 
+    const textRowContainer = document.createElement("div");
+    textRowContainer.classList.add("row");
+
+    const pinIcon = new Image();
+    pinIcon.classList.add("icon");
+    pinIcon.src = pinIconSvg;
     const address = document.createElement("p");
     const addressDataArray = l.address;
     address.innerHTML = addressDataArray.join("<br>");
-    card.appendChild(address);
+    textRowContainer.appendChild(pinIcon);
+    textRowContainer.appendChild(address);
 
+    const phoneIcon = new Image();
+    phoneIcon.classList.add("icon");
+    phoneIcon.src = phoneIconSvg;
     const phone = document.createElement("p");
     phone.textContent = l.phone;
-    card.appendChild(phone);
+    textRowContainer.appendChild(phoneIcon);
+    textRowContainer.appendChild(phone);
 
+    card.appendChild(textRowContainer);
     grid.appendChild(card);
   });
 
