@@ -147,6 +147,10 @@ function createLocationsSection() {
     locationName.textContent = `${l.suburb} Funhouse`;
     card.appendChild(locationName);
 
+    const img = new Image();
+    img.src = l.imagePath;
+    card.appendChild(img);
+
     const address = document.createElement("p");
     const addressDataArray = l.address;
     address.innerHTML = addressDataArray.join("<br>");
