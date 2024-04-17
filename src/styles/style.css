@@ -223,9 +223,8 @@ h2 {
     width: 80%;
     margin: 0 auto;
     gap: 15px;
-    justify-content: space-between;
 }
 
 #locations .icon {
-    width: 50px;
+    width: 30px;
 }
