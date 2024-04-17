@@ -227,6 +227,10 @@ h2 {
     gap: 25px;
 }
 
+#locations .card .row:last-child {
+    align-items: center;
+}
+
 #locations .icon {
     width: 30px;
 }
