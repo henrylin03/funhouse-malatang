@@ -139,10 +139,14 @@ h2 {
     text-align: center;
 }
 
-#steps {
-    padding: 50px 10px 90px 10px;
+#steps,
+#locations {
     width: 950px;
     margin: 0 auto;
+}
+
+#steps {
+    padding: 50px 10px 90px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,6 +183,12 @@ h2 {
 
 #steps img {
     width: 65px;
+}
+
+#locations>.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 #locations .card {
