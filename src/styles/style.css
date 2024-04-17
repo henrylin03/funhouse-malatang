@@ -137,16 +137,17 @@ h2 {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
+    color: var(--dark-clr);
 }
 
 #steps,
 #locations {
     width: 950px;
     margin: 0 auto;
+    padding: 50px 10px 90px 10px;
 }
 
 #steps {
-    padding: 50px 10px 90px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
