@@ -207,6 +207,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    box-shadow: 4px 3px 4px 0px lightgray;
 }
 
 #locations .card h3 {
