@@ -211,11 +211,12 @@ h2 {
 
 #locations .card h3 {
     text-align: center;
-    color: var(--accent-clr);
+    color: var(--dark-clr);
 }
 
 #locations .card .location-photo {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 #locations .card .row {
