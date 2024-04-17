@@ -7,6 +7,7 @@ import tongsImg from "./assets/images/tongs.png";
 import bowlSpoonSvg from "./assets/images/bowl-spoon.svg";
 import soupSvg from "./assets/images/soup.svg";
 import sauceSvg from "./assets/images/sauce.svg";
+import locations from "./assets/data/locations.json";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -135,6 +136,8 @@ function createLocationsSection() {
   const heading = document.createElement("h3");
   heading.textContent = "Locations";
   section.appendChild(heading);
+
+  locations.forEach((l) => console.log(l));
 
   return section;
 }
