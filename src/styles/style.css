@@ -203,11 +203,12 @@ h2 {
 #locations .card {
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
+    border: 1px solid var(--light-pink-clr);
     padding: 25px 35px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 4px 3px 4px 0px lightgray;
+    box-shadow: 4px 3px 4px 0px hsl(0, 0%, 88%);
 }
 
 #locations .card h3 {
