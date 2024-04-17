@@ -204,3 +204,7 @@ h2 {
     border-radius: 25px;
     padding: 25px;
 }
+
+#locations .card img {
+    width: 100%;
+}
