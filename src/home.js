@@ -87,8 +87,7 @@ function createStepsSection() {
       imgSrc: bowlSpoonSvg,
     },
     {
-      description:
-        "We'll cook it for you and buzz you when it's ready to collect",
+      description: "We'll cook it for you and buzz you when it's ready",
       imgSrc: soupSvg,
     },
     {
