@@ -135,9 +135,34 @@ function createLocationsSection() {
 
   const heading = document.createElement("h3");
   heading.textContent = "Locations";
-  section.appendChild(heading);
+
+  const grid = document.createElement("div");
+  grid.classList.add("grid");
+
+  locations.forEach((l) => {
+    const card = document.createElement("article");
+    card.classList.add("card");
+
+    const locationName = document.createElement("h3");
+    locationName.textContent = `${l.suburb} Funhouse`;
+    card.appendChild(locationName);
+
+    const address = document.createElement("p");
+    const addressDataArray = l.address;
+    address.innerHTML = addressDataArray.join("<br>");
+    card.appendChild(address);
+
+    const phone = document.createElement("p");
+    phone.textContent = l.phone;
+    card.appendChild(phone);
+
+    grid.appendChild(card);
+  });
 
   locations.forEach((l) => console.log(l));
+
+  section.appendChild(heading);
+  section.appendChild(grid);
 
   return section;
 }
