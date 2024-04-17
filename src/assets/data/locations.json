@@ -2,14 +2,12 @@
   {
     "suburb": "Hurstville",
     "address": ["227 Forest Road", "Hurstville NSW 2220"],
-    "imagePath": "./assets/images/interiorHurstville.jpg",
     "openingHours": "Mon - Sun: 11am - 9:30pm",
     "phone": "(02) 9570 7908"
   },
   {
     "suburb": "Chatswood",
     "address": ["District Dining", "436 Victoria Avenue", "Chatswood NSW 2067"],
-    "imagePath": "./assets/images/interiorChatswood.jpg",
     "openingHours": "Mon - Sun: 11am- 9:30pm",
     "phone": "(02) 9419 8372"
   }

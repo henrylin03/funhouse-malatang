@@ -148,7 +148,7 @@ function createLocationsSection() {
     card.appendChild(locationName);
 
     const img = new Image();
-    img.src = l.imagePath;
+    img.src = `./assets/images/store${l.suburb}.jpg`;
     card.appendChild(img);
 
     const address = document.createElement("p");
