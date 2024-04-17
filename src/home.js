@@ -133,7 +133,7 @@ function createLocationsSection() {
   const section = document.createElement("section");
   section.setAttribute("id", "locations");
 
-  const heading = document.createElement("h3");
+  const heading = document.createElement("h2");
   heading.textContent = "Locations";
 
   const grid = document.createElement("div");
