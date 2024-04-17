@@ -142,6 +142,7 @@ h2 {
 #steps {
     padding: 25px 10px;
     width: 950px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
