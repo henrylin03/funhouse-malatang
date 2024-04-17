@@ -8,6 +8,8 @@ import bowlSpoonSvg from "./assets/images/bowl-spoon.svg";
 import soupSvg from "./assets/images/soup.svg";
 import sauceSvg from "./assets/images/sauce.svg";
 import locations from "./assets/data/locations.json";
+import chatswoodStoreImg from "./assets/images/storeChatswood.jpg";
+import hurstvilleStoreImg from "./assets/images/storeHurstville.jpg";
 
 export function createHomePage() {
   const mainElement = document.querySelector("main");
@@ -139,6 +141,11 @@ function createLocationsSection() {
   const grid = document.createElement("div");
   grid.classList.add("grid");
 
+  const locationsImagesLookup = {
+    Chatswood: chatswoodStoreImg,
+    Hurstville: hurstvilleStoreImg,
+  };
+
   locations.forEach((l) => {
     const card = document.createElement("article");
     card.classList.add("card");
@@ -148,7 +155,7 @@ function createLocationsSection() {
     card.appendChild(locationName);
 
     const img = new Image();
-    img.src = `./assets/images/store${l.suburb}.jpg`;
+    img.src = locationsImagesLookup[l.suburb];
     card.appendChild(img);
 
     const address = document.createElement("p");
