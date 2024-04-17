@@ -1,5 +1,5 @@
-import { createHeader } from "./header";
-import { createFooter } from "./footer";
+import { createHeader } from "./createHeader";
+import { createFooter } from "./createFooter";
 import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
