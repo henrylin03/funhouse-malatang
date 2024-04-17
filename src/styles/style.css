@@ -210,6 +210,7 @@ h2 {
 
 #locations h3 {
     text-align: center;
+    color: var(--accent-clr);
 }
 
 #locations .card img {
