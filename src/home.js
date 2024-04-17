@@ -112,7 +112,6 @@ function createStepsSection() {
 
     const stepImg = new Image();
     stepImg.src = step.imgSrc;
-    stepImg.setAttribute("width", "20px");
     tempDiv.appendChild(stepImg);
 
     grid.appendChild(tempDiv);
