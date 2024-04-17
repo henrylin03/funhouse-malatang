@@ -218,6 +218,14 @@ h2 {
     width: 100%;
 }
 
+#locations .card .row {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+    justify-content: space-between;
+}
+
 #locations .icon {
-    width: 65px;
+    width: 50px;
 }

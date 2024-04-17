@@ -154,34 +154,36 @@ function createLocationsSection() {
 
     const locationName = document.createElement("h3");
     locationName.textContent = `${l.suburb} Funhouse`;
-    card.appendChild(locationName);
 
     const locationImg = new Image();
     locationImg.src = locationsImagesLookup[l.suburb];
     locationImg.classList.add("location-photo");
-    card.appendChild(locationImg);
 
-    const textRowContainer = document.createElement("div");
-    textRowContainer.classList.add("row");
-
+    const addressRow = document.createElement("div");
+    addressRow.classList.add("row");
     const pinIcon = new Image();
     pinIcon.classList.add("icon");
     pinIcon.src = pinIconSvg;
     const address = document.createElement("p");
     const addressDataArray = l.address;
     address.innerHTML = addressDataArray.join("<br>");
-    textRowContainer.appendChild(pinIcon);
-    textRowContainer.appendChild(address);
+    addressRow.appendChild(pinIcon);
+    addressRow.appendChild(address);
 
+    const phoneRow = document.createElement("div");
+    phoneRow.classList.add("row");
     const phoneIcon = new Image();
     phoneIcon.classList.add("icon");
     phoneIcon.src = phoneIconSvg;
     const phone = document.createElement("p");
     phone.textContent = l.phone;
-    textRowContainer.appendChild(phoneIcon);
-    textRowContainer.appendChild(phone);
+    phoneRow.appendChild(phoneIcon);
+    phoneRow.appendChild(phone);
 
-    card.appendChild(textRowContainer);
+    card.appendChild(locationName);
+    card.appendChild(locationImg);
+    card.appendChild(addressRow);
+    card.appendChild(phoneRow);
     grid.appendChild(card);
   });
 
