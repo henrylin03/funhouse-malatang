@@ -164,6 +164,10 @@ h2 {
     gap: 20px;
 }
 
+#steps .step:not(:last-child) {
+    border-right: 3px solid var(--light-pink-clr);
+}
+
 #steps .text {
     flex: 1;
     display: flex;
