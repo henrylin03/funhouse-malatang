@@ -1,6 +1,12 @@
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
 
+  mainElement.appendChild(createAboveTheFoldSection());
+
+  return;
+}
+
+function createAboveTheFoldSection() {
   const aboveTheFoldSection = document.createElement("section");
   aboveTheFoldSection.classList.add("above-the-fold");
   const innerContainer = document.createElement("div");
@@ -15,7 +21,5 @@ export function createMenuPage() {
   innerContainer.appendChild(pageSubtext);
   aboveTheFoldSection.appendChild(innerContainer);
 
-  mainElement.appendChild(aboveTheFoldSection);
-
-  return;
+  return aboveTheFoldSection;
 }
