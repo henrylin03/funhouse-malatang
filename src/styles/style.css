@@ -42,9 +42,12 @@ header .inner {
     color: var(--light-clr);
 }
 
-.logo {
-    background-image: url("../assets/images/logo.jpg");
+figure.logo {
+    background-image: url(../assets/images/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 120px;
+    height: 60px;
 }
 
 nav {
