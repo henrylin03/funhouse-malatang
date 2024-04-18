@@ -47,6 +47,7 @@ function createHeroSection() {
   const btn = document.createElement("button");
   btn.classList.add("cta");
   btn.textContent = "Visit us";
+  btn.setAttribute("onclick", "window.location.href='#locations'");
   ctaDiv.appendChild(btn);
 
   const imagesContainer = document.createElement("figure");
