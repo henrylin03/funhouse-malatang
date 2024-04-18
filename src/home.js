@@ -1,4 +1,3 @@
-import { createHeader } from "./createHeader";
 import { createFooter } from "./createFooter";
 import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
@@ -73,7 +72,6 @@ function createHeroSection() {
   flexContainer.appendChild(ctaDiv);
   flexContainer.appendChild(imagesContainer);
 
-  heroSection.appendChild(createHeader());
   heroSection.appendChild(flexContainer);
 
   return heroSection;
