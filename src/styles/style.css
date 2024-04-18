@@ -23,6 +23,7 @@ body {
 h1 {
     font-size: 3rem;
     line-height: 4.2rem;
+    margin: 0;
 }
 
 button {
