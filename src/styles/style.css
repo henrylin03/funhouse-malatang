@@ -266,6 +266,7 @@ footer {
 }
 
 .above-the-fold>.inner {
-    max-width: 950px;
+    max-width: 550px;
     margin: 0 auto;
+    line-height: 1.8rem;
 }
