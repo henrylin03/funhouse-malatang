@@ -258,10 +258,13 @@ footer {
 
 /* subpages */
 /* menu page */
-section.above-the-fold {
+.above-the-fold {
     text-align: center;
     background-color: var(--dark-clr);
     color: var(--light-pink-clr);
+}
+
+.above-the-fold>.inner {
     max-width: 950px;
     margin: 0 auto;
 }
