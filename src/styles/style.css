@@ -29,6 +29,10 @@ button {
 
 /* header */
 header {
+    background-color: var(--dark-clr);
+}
+
+header .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +42,8 @@ header {
     color: var(--light-clr);
 }
 
-.logo img {
+.logo {
+    background-image: url("../assets/images/logo.jpg");
     width: 120px;
 }
 
