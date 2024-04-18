@@ -263,4 +263,5 @@ section.above-the-fold {
     background-color: var(--dark-clr);
     color: var(--light-pink-clr);
     max-width: 950px;
+    margin: 0 auto;
 }
