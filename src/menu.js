@@ -2,6 +2,7 @@ export function createMenuPage() {
   const mainElement = document.querySelector("main");
 
   mainElement.appendChild(createAboveTheFoldSection());
+  mainElement.appendChild(createIngredientsSection());
 
   return;
 }
@@ -22,4 +23,19 @@ function createAboveTheFoldSection() {
   aboveTheFoldSection.appendChild(innerContainer);
 
   return aboveTheFoldSection;
+}
+
+function createIngredientsSection() {
+  const section = document.createElement("section");
+  section.setAttribute("id", "ingredients");
+  const heading = document.createElement("h2");
+  heading.textContent = "Ingredients";
+  const subtext = document.createElement("p");
+  subtext.textContent =
+    "From rolls of succulent meat to crispy vegetables; from chewy noodles to soft fish-tofu that melt in your mouth. Select your favourites or try something new - either way, we're committed to only providing fresh, high quality ingredients at our stores, guaranteeing a satisfying meal every time!";
+
+  section.appendChild(heading);
+  section.appendChild(subtext);
+
+  return section;
 }
