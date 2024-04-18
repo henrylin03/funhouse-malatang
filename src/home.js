@@ -1,4 +1,3 @@
-import { createFooter } from "./createFooter";
 import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
 import hotpotImg from "./assets/images/hotpot.jpg";
@@ -13,7 +12,6 @@ import pinIconSvg from "./assets/images/map-pin.svg";
 import phoneIconSvg from "./assets/images/phone.svg";
 
 export function createHomePage() {
-  const body = document.body;
   const mainElement = document.querySelector("main");
 
   const heroSection = createHeroSection();
@@ -23,7 +21,6 @@ export function createHomePage() {
   mainElement.appendChild(heroSection);
   mainElement.appendChild(stepsSection);
   mainElement.appendChild(locationsSection);
-  body.appendChild(createFooter());
 }
 
 function createHeroSection() {
