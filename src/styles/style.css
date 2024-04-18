@@ -20,6 +20,11 @@ body {
     text-wrap: pretty;
 }
 
+h1 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -89,8 +94,6 @@ nav button {
 
 .hero h1 {
     flex: 2;
-    font-size: 3rem;
-    line-height: 4.2rem;
     margin: 0;
 }
 
@@ -251,4 +254,13 @@ footer {
     color: var(--light-pink-clr);
     text-align: center;
     padding: 5px 0;
+}
+
+/* subpages */
+/* menu page */
+section.above-the-fold {
+    text-align: center;
+    background-color: var(--dark-clr);
+    color: var(--light-pink-clr);
+    max-width: 950px;
 }
