@@ -270,3 +270,7 @@ footer {
     margin: 0 auto;
     line-height: 1.8rem;
 }
+
+.above-the-fold h1 {
+    margin-bottom: 10px;
+}
