@@ -26,6 +26,10 @@ h1 {
     margin: 0;
 }
 
+p {
+    line-height: 1.8rem;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -100,7 +104,6 @@ nav button {
 
 .hero p {
     flex: 1;
-    line-height: 1.8rem;
     text-align: right;
 }
 
