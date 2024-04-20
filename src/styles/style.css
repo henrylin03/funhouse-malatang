@@ -294,6 +294,10 @@ footer {
     gap: 15px;
 }
 
+#ingredients p {
+    width: 80%;
+}
+
 #ingredients .img-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
