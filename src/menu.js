@@ -41,13 +41,15 @@ function createIngredientsSection() {
   const imgsContainer = document.createElement("div");
   imgsContainer.classList.add("img-container");
   images.forEach((img) => {
+    const tempImageSubcontainer = document.createElement("figure");
     const tempImageElement = new Image();
     tempImageElement.src = img;
     tempImageElement.setAttribute(
       "alt",
       "Beautiful, fresh ingredients laid out on display for customers to pick and choose to include in their malatang at Funhouse!"
     );
-    imgsContainer.appendChild(tempImageElement);
+    tempImageSubcontainer.appendChild(tempImageElement);
+    imgsContainer.appendChild(tempImageSubcontainer);
   });
 
   section.appendChild(heading);

@@ -293,3 +293,14 @@ footer {
     gap: 15px;
     align-items: center;
 }
+
+#ingredients .img-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#ingredients img {
+    width: 100%;
+    height: auto;
+}
