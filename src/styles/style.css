@@ -275,3 +275,10 @@ footer {
 .above-the-fold h1 {
     margin-bottom: 10px;
 }
+
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
