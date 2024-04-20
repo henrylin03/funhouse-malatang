@@ -33,6 +33,13 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark-clr);
+}
+
 p {
     line-height: 1.8rem;
 }
@@ -159,13 +166,6 @@ nav button {
 }
 
 /* main section */
-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--dark-clr);
-}
-
 #steps,
 #locations,
 #ingredients {
@@ -297,14 +297,11 @@ footer {
     gap: 15px;
 }
 
-#ingredients p {
-    width: 80%;
-}
-
 #ingredients .img-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 25px;
+    width: 1000px;
 }
 
 #ingredients img {
