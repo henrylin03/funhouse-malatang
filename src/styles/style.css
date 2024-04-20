@@ -290,21 +290,17 @@ footer {
 #ingredients {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
+    gap: 15px;
 }
 
 #ingredients .img-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
     gap: 25px;
 }
 
 #ingredients img {
     width: 100%;
     height: auto;
-}
-
-#ingredients .img-container:last-child {
-    flex: 2;
 }
