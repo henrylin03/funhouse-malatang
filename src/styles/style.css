@@ -18,6 +18,13 @@ body {
     font-family: "Open Sans", Helvetica, sans-serif;
     background-color: var(--light-clr);
     text-wrap: pretty;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
