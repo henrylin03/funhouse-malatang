@@ -45,6 +45,11 @@ button {
     color: inherit;
 }
 
+figure img {
+    border-radius: 50px;
+    border: 5px solid var(--light-pink-clr);
+}
+
 /* header */
 header {
     background-color: var(--dark-clr);
@@ -147,8 +152,6 @@ nav button {
 
 .hero figure img {
     flex: 1;
-    border-radius: 50px;
-    border: 5px solid var(--light-pink-clr);
 }
 
 .hero .centre {
