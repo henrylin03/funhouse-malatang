@@ -154,7 +154,8 @@ h2 {
 }
 
 #steps,
-#locations {
+#locations,
+#ingredients {
     width: 950px;
     margin: 0 auto;
     padding: 50px 10px 90px 10px;
