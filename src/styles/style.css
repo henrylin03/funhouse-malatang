@@ -304,3 +304,7 @@ footer {
     width: 100%;
     height: auto;
 }
+
+#ingredients .img-container:last-child {
+    flex: 2;
+}
