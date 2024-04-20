@@ -1,3 +1,6 @@
+import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
+import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
+
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
 
@@ -34,8 +37,22 @@ function createIngredientsSection() {
   subtext.textContent =
     "From rolls of succulent meat to crispy vegetables; from chewy noodles to soft fish-tofu that melt in your mouth. Select your favourites or try something new - either way, we're committed to only providing fresh, high quality ingredients at our stores, guaranteeing a satisfying meal every time!";
 
+  const images = [ingredientsDisplayImg, peopleGettingIngredientsImg];
+  const imgsContainer = document.createElement("div");
+  imgsContainer.classList.add("img-container");
+  images.forEach((img) => {
+    const tempImageElement = new Image();
+    tempImageElement.src = img;
+    tempImageElement.setAttribute(
+      "alt",
+      "Beautiful, fresh ingredients laid out on display for customers to pick and choose to include in their malatang at Funhouse!"
+    );
+    imgsContainer.appendChild(tempImageElement);
+  });
+
   section.appendChild(heading);
   section.appendChild(subtext);
+  section.appendChild(imgsContainer);
 
   return section;
 }
