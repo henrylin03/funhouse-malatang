@@ -58,3 +58,17 @@ function createIngredientsSection() {
 
   return section;
 }
+
+function createBaseSection() {
+  const section = document.createElement("section");
+  section.setAttribute("id", "bases");
+  const heading = document.createElement("h2");
+  heading.textContent = "Bases";
+  const subtext = document.createElement("p");
+  subtext.textContent = "";
+
+  section.appendChild(heading);
+  section.appendChild(subtext);
+
+  return section;
+}
