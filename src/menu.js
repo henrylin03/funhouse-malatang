@@ -1,11 +1,6 @@
 import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
 import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
 import spicyImg from "./assets/images/spicy.jpg";
-import boneImg from "./assets/images/bone.jpg";
-import pickedVegetableImg from "./assets/images/pickedVeg.jpg";
-import malaDryImg from "./assets/images/malaDry.jpg";
-import tomatoImg from "./assets/images/tomato.jpg";
-import classicalImg from "./assets/images/classical.jpg";
 
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
@@ -41,6 +36,7 @@ function createIngredientsSection() {
   const heading = document.createElement("h2");
   heading.textContent = "Ingredients";
   const subtext = document.createElement("p");
+  subtext.classList.add("section-subtext");
   subtext.textContent =
     "From rolls of succulent meat to crispy vegetables; from chewy noodles to soft fish-tofu that melt in your mouth. Select your favourites or try something new - either way, we're committed to only providing fresh, high quality ingredients at our stores, guaranteeing a satisfying meal every time!";
 
@@ -67,19 +63,6 @@ function createIngredientsSection() {
 }
 
 function createBaseSection() {
-  const bases = [
-    {
-      name: "Signature Mala",
-      img: spicyImg,
-      spiceLevel: 3,
-    },
-    { name: "Bone Broth", img: boneImg, spiceLevel: 0 },
-    { name: "Dry Mala", img: malaDryImg, spiceLevel: 3 },
-    { name: "Classical Soup", img: classicalImg, spiceLevel: 0 },
-    { name: "Tomato Soup", img: tomatoImg, spiceLevel: 0 },
-    { name: "Pickled Vegetable Soup", img: pickedVegetableImg, spiceLevel: 0 },
-  ];
-
   const section = document.createElement("section");
   section.setAttribute("id", "bases");
   const heading = document.createElement("h2");
@@ -87,13 +70,14 @@ function createBaseSection() {
   const subtext = document.createElement("p");
   subtext.textContent =
     "Pick between spicy and non-spicy broths, or no broth at all with our range of dry, stirfried malatang!";
+  subtext.classList.add("section-subtext");
   const grid = document.createElement("article");
   grid.classList.add("grid");
 
   section.appendChild(heading);
   section.appendChild(subtext);
 
-  console.log(bases);
+  console.log(spicyImg);
 
   return section;
 }

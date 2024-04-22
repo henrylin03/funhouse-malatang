@@ -41,7 +41,7 @@ h2 {
 }
 
 p {
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 }
 
 button {
@@ -168,10 +168,15 @@ nav button {
 /* main section */
 #steps,
 #locations,
-#ingredients {
+#ingredients,
+#bases {
     width: 950px;
     margin: 0 auto;
     padding: 50px 10px 90px 10px;
+}
+
+.section-subtext {
+    text-align: center;
 }
 
 #steps {
@@ -295,7 +300,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    text-align: center;
 }
 
 #ingredients .img-container {
