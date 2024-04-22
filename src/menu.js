@@ -68,6 +68,8 @@ function createBaseSection() {
   const subtext = document.createElement("p");
   subtext.textContent =
     "Pick between spicy and non-spicy broths, or no broth at all with our range of dry, stirfried malatang!";
+  const grid = document.createElement("article");
+  grid.classList.add("grid");
 
   section.appendChild(heading);
   section.appendChild(subtext);
