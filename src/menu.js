@@ -66,7 +66,8 @@ function createBaseSection() {
   const heading = document.createElement("h2");
   heading.textContent = "Bases";
   const subtext = document.createElement("p");
-  subtext.textContent = "";
+  subtext.textContent =
+    "Pick between spicy and non-spicy broths, or no broth at all with our range of dry, stirfried malatang!";
 
   section.appendChild(heading);
   section.appendChild(subtext);
