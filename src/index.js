@@ -8,10 +8,6 @@ const page = (function () {
   const menuBtn = document.querySelector("#menu-btn");
   const logo = document.querySelector(".logo");
 
-  // initialise home page
-  createHomePage();
-
-  // add event listeners
   const generateHomePage = () => {
     menuBtn.classList.remove("selected");
     homeBtn.classList.add("selected");
@@ -23,6 +19,8 @@ const page = (function () {
     menuBtn.classList.add("selected");
     createMenuPage();
   };
+
+  generateHomePage();
 
   logo.addEventListener("click", generateHomePage);
   homeBtn.addEventListener("click", generateHomePage);
