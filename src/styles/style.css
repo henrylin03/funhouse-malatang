@@ -331,6 +331,8 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 .base-img img {
