@@ -89,11 +89,14 @@ function createBaseSection() {
     tempDiv.classList.add("base");
     const tempHeading = document.createElement("h3");
     tempHeading.textContent = b.name;
+    const tempImgDiv = document.createElement("div");
+    tempImgDiv.classList.add("base-img");
     const tempBaseImg = new Image();
     tempBaseImg.src = b.img;
 
     tempDiv.appendChild(tempHeading);
-    tempDiv.appendChild(tempBaseImg);
+    tempImgDiv.appendChild(tempBaseImg);
+    tempDiv.appendChild(tempImgDiv);
     grid.appendChild(tempDiv);
   });
 
