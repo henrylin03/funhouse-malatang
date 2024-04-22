@@ -18,7 +18,7 @@ body {
     font-family: "Open Sans", Helvetica, sans-serif;
     background-color: var(--light-clr);
     text-wrap: pretty;
-    height: 100dvh;
+    /* height: 100dvh; */
     display: flex;
     flex-direction: column;
 }
