@@ -302,11 +302,15 @@ footer {
     gap: 25px;
 }
 
+#ingredients .img-container,
+#bases .grid {
+    width: 1000px;
+}
+
 #ingredients .img-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 25px;
-    width: 1000px;
 }
 
 #ingredients img {
