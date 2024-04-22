@@ -71,12 +71,13 @@ header .inner {
     color: var(--light-clr);
 }
 
-figure.logo {
+.logo {
     background-image: url(../assets/images/logo.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 120px;
     height: 60px;
+    cursor: pointer;
 }
 
 nav {
