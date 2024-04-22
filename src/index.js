@@ -12,7 +12,19 @@ const page = (function () {
   createHomePage();
 
   // add event listeners
-  logo.addEventListener("click", createHomePage);
-  homeBtn.addEventListener("click", createHomePage);
-  menuBtn.addEventListener("click", createMenuPage);
+  const generateHomePage = () => {
+    menuBtn.classList.remove("selected");
+    homeBtn.classList.add("selected");
+    createHomePage();
+  };
+
+  const generateMenuPage = () => {
+    homeBtn.classList.remove("selected");
+    menuBtn.classList.add("selected");
+    createMenuPage();
+  };
+
+  logo.addEventListener("click", generateHomePage);
+  homeBtn.addEventListener("click", generateHomePage);
+  menuBtn.addEventListener("click", generateMenuPage);
 })();
