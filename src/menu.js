@@ -8,6 +8,9 @@ import tomatoImg from "./assets/images/tomato.jpg";
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
 
+  // clear main section
+  mainElement.replaceChildren();
+
   mainElement.appendChild(createAboveTheFoldSection());
   mainElement.appendChild(createIngredientsSection());
   mainElement.appendChild(createBaseSection());

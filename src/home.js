@@ -14,13 +14,12 @@ import phoneIconSvg from "./assets/images/phone.svg";
 export function createHomePage() {
   const mainElement = document.querySelector("main");
 
-  const heroSection = createHeroSection();
-  const stepsSection = createStepsSection();
-  const locationsSection = createLocationsSection();
+  // clear main section
+  mainElement.replaceChildren();
 
-  mainElement.appendChild(heroSection);
-  mainElement.appendChild(stepsSection);
-  mainElement.appendChild(locationsSection);
+  mainElement.appendChild(createHeroSection());
+  mainElement.appendChild(createStepsSection());
+  mainElement.appendChild(createLocationsSection());
 }
 
 function createHeroSection() {
