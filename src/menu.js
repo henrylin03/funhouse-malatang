@@ -1,6 +1,11 @@
 import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
 import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
-import bases from "./assets/data/bases";
+import spicyImg from "./assets/images/bases/spicy.jpg";
+import boneImg from "./assets/images/bases/bone.jpg";
+import pickedVegetableImg from "./assets/images/bases/pickedVeg.jpg";
+import malaDryImg from "./assets/images/bases/malaDry.jpg";
+import tomatoImg from "./assets/images/bases/tomato.jpg";
+import classicalImg from "./assets/images/bases/classical.jpg";
 
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
@@ -62,6 +67,19 @@ function createIngredientsSection() {
 }
 
 function createBaseSection() {
+  const bases = [
+    {
+      name: "Signature Mala",
+      img: spicyImg,
+      spiceLevel: 3,
+    },
+    { name: "Bone Broth", img: boneImg, spiceLevel: 0 },
+    { name: "Dry Mala", img: malaDryImg, spiceLevel: 3 },
+    { name: "Classical Soup", img: classicalImg, spiceLevel: 0 },
+    { name: "Tomato Soup", img: tomatoImg, spiceLevel: 0 },
+    { name: "Pickled Vegetable Soup", img: pickedVegetableImg, spiceLevel: 0 },
+  ];
+
   const section = document.createElement("section");
   section.setAttribute("id", "bases");
   const heading = document.createElement("h2");
