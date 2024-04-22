@@ -331,7 +331,8 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 100%;
+    justify-content: center;
+    border-radius: 50%;
     overflow: hidden;
 }
 
