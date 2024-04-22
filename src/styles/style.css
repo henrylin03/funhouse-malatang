@@ -38,6 +38,7 @@ h2 {
     font-weight: 700;
     text-align: center;
     color: var(--dark-clr);
+    margin-bottom: 10px;
 }
 
 p {
@@ -307,7 +308,6 @@ footer {
     grid-template-columns: 1.5fr 1fr;
     gap: 25px;
     width: 1000px;
-    margin-top: 10px;
 }
 
 #ingredients img {
