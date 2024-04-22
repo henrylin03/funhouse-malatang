@@ -1,11 +1,11 @@
 import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
 import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
-import spicyImg from "./assets/images/bases/spicy.jpg";
-import boneImg from "./assets/images/bases/bone.jpg";
-import pickedVegetableImg from "./assets/images/bases/pickedVeg.jpg";
-import malaDryImg from "./assets/images/bases/malaDry.jpg";
-import tomatoImg from "./assets/images/bases/tomato.jpg";
-import classicalImg from "./assets/images/bases/classical.jpg";
+import spicyImg from "./assets/images/spicy.jpg";
+import boneImg from "./assets/images/bone.jpg";
+import pickedVegetableImg from "./assets/images/pickedVeg.jpg";
+import malaDryImg from "./assets/images/malaDry.jpg";
+import tomatoImg from "./assets/images/tomato.jpg";
+import classicalImg from "./assets/images/classical.jpg";
 
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
