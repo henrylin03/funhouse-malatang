@@ -89,7 +89,7 @@ function createBaseSection() {
     tempDiv.classList.add("base");
     const tempHeading = document.createElement("h3");
     tempHeading.textContent = b.name;
-    const tempImgWrapper = document.createElement("figure");
+    const tempImgWrapper = document.createElement("div");
     tempImgWrapper.classList.add("base-img");
     const tempBaseImg = new Image();
     tempBaseImg.src = b.img;
