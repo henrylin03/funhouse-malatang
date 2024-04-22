@@ -1,5 +1,6 @@
 import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
 import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
+import bases from "./assets/data/bases";
 
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
@@ -73,6 +74,8 @@ function createBaseSection() {
 
   section.appendChild(heading);
   section.appendChild(subtext);
+
+  console.log(bases);
 
   return section;
 }
