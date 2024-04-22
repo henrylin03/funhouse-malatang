@@ -315,3 +315,7 @@ footer {
     width: 100%;
     height: auto;
 }
+
+#bases .grid {
+    display: grid;
+}

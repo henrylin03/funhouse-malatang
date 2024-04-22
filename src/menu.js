@@ -1,6 +1,9 @@
 import ingredientsDisplayImg from "./assets/images/ingredients.jpg";
 import peopleGettingIngredientsImg from "./assets/images/people-getting-ingredients.jpg";
 import spicyImg from "./assets/images/spicy.jpg";
+import boneImg from "./assets/images/bone.jpg";
+import malaDryImg from "./assets/images/malaDry.jpg";
+import tomatoImg from "./assets/images/tomato.jpg";
 
 export function createMenuPage() {
   const mainElement = document.querySelector("main");
@@ -63,6 +66,13 @@ function createIngredientsSection() {
 }
 
 function createBaseSection() {
+  const bases = [
+    { name: "Spicy Mala Soup", img: spicyImg, spiceLevel: 3 },
+    { name: "Pork Bone Broth", img: boneImg, spiceLevel: 0 },
+    { name: "Spicy Dry Mala", img: malaDryImg, spiceLevel: 3 },
+    { name: "Tomato Soup", img: tomatoImg, spiceLevel: 0 },
+  ];
+
   const section = document.createElement("section");
   section.setAttribute("id", "bases");
   const heading = document.createElement("h2");
@@ -71,13 +81,25 @@ function createBaseSection() {
   subtext.textContent =
     "Pick between spicy and non-spicy broths, or no broth at all with our range of dry, stirfried malatang!";
   subtext.classList.add("section-subtext");
+
   const grid = document.createElement("article");
   grid.classList.add("grid");
+  bases.forEach((b) => {
+    const tempDiv = document.createElement("div");
+    tempDiv.classList.add("base");
+    const tempHeading = document.createElement("h3");
+    tempHeading.textContent = b.name;
+    const tempBaseImg = new Image();
+    tempBaseImg.src = b.img;
+
+    tempDiv.appendChild(tempHeading);
+    tempDiv.appendChild(tempBaseImg);
+    grid.appendChild(tempDiv);
+  });
 
   section.appendChild(heading);
   section.appendChild(subtext);
-
-  console.log(spicyImg);
+  section.appendChild(grid);
 
   return section;
 }
