@@ -6,6 +6,7 @@ export function createMenuPage() {
 
   mainElement.appendChild(createAboveTheFoldSection());
   mainElement.appendChild(createIngredientsSection());
+  mainElement.appendChild(createBaseSection());
 
   return;
 }
