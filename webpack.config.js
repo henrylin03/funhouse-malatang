@@ -32,5 +32,4 @@ module.exports = {
       favicon: "./src/assets/images/logo.jpg",
     }),
   ],
-  optimization: { runtimeChunk: "single" },
 };
