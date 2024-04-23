@@ -25,10 +25,12 @@ module.exports = {
     ],
   },
   devtool: "inline-source-map",
+  devServer: { static: "./dist" },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       favicon: "./src/assets/images/logo.jpg",
     }),
   ],
+  optimization: { runtimeChunk: "single" },
 };
