@@ -27,7 +27,7 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
-    watchFiles: ["src/**/**/*"],
+    watchFiles: ["./src/index.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
