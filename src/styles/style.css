@@ -179,9 +179,9 @@ nav button.selected {
 #locations,
 #ingredients,
 #bases {
-    width: 950px;
+    width: var(--content-width);
     margin: 0 auto;
-    padding: 50px 10px;
+    padding: 50px;
 }
 
 .section-subtext {
