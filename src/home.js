@@ -156,6 +156,8 @@ function createLocationsSection() {
     locationImg.src = locationsImagesLookup[l.suburb];
     locationImg.classList.add("location-photo");
 
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("text");
     const addressRow = document.createElement("div");
     addressRow.classList.add("row");
     const pinIcon = new Image();
@@ -179,8 +181,9 @@ function createLocationsSection() {
 
     card.appendChild(locationName);
     card.appendChild(locationImg);
-    card.appendChild(addressRow);
-    card.appendChild(phoneRow);
+    textContainer.appendChild(addressRow);
+    textContainer.appendChild(phoneRow);
+    card.appendChild(textContainer);
     grid.appendChild(card);
   });
 
