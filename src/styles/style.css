@@ -134,6 +134,10 @@ nav button.selected {
 .hero p {
     flex: 1;
     text-align: right;
+
+    @media (max-width: 450px) {
+        display: none;
+    }
 }
 
 .hero .cta-container {
