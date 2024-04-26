@@ -199,7 +199,6 @@ nav button.selected {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    gap: 20px;
 }
 
 #steps .step {
@@ -208,6 +207,7 @@ nav button.selected {
     align-items: center;
     line-height: 1.75rem;
     gap: 20px;
+    padding: 0 25px;
 }
 
 #steps .step:not(:last-child) {
