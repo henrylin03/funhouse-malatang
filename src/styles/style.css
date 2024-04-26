@@ -5,6 +5,7 @@
     --dark-clr: hsl(329, 100%, 11%);
     --accent-clr: hsl(356, 89%, 45%);
     --light-pink-clr: #ffd5cc;
+    --content-width: min(100%, 950px);
 }
 
 * {
@@ -65,9 +66,9 @@ header .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 950px;
+    width: var(--content-width);
     margin: 0 auto;
-    padding: 25px 10px;
+    padding: 25px 50px;
     color: var(--light-clr);
 }
 
