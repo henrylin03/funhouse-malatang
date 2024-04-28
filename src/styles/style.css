@@ -174,12 +174,13 @@ nav button.selected {
 }
 
 .hero figure img {
+    flex: 2;
+}
+
+.hero figure img:first-child {
     flex: 1;
 }
 
-.hero .centre {
-    flex: 3;
-}
 
 /* main section */
 #steps,

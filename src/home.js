@@ -1,6 +1,6 @@
-import bowlImg from "./assets/images/ingredients-in-bowl.jpg";
 import tongsAndIngredientsImg from "./assets/images/tongs-and-ingredients.jpg";
-import hotpotImg from "./assets/images/hotpot.jpg";
+import peanutDrizzleImg from "./assets/images/peanutDrizzleEndBowl.jpg";
+import splitBowlImg from "./assets/images/splitBowl.jpg";
 import tongsImg from "./assets/images/tongs.png";
 import bowlSpoonSvg from "./assets/images/bowl-spoon.svg";
 import soupSvg from "./assets/images/soup.svg";
@@ -53,17 +53,16 @@ function createHeroSection() {
   const imgTongs = new Image();
   imgTongs.src = tongsAndIngredientsImg;
   imgTongs.setAttribute("width", "25%");
-  const imgHotpot = new Image();
-  imgHotpot.src = hotpotImg;
-  imgHotpot.setAttribute("width", "200px");
-  imgHotpot.classList.add("centre");
-  const imgIngredients = new Image();
-  imgIngredients.src = bowlImg;
-  imgIngredients.setAttribute("width", "25%");
+  const imgDrizzle = new Image();
+  imgDrizzle.src = peanutDrizzleImg;
+  imgDrizzle.setAttribute("width", "200px");
+  const imgSplitBowl = new Image();
+  imgSplitBowl.src = splitBowlImg;
+  imgSplitBowl.setAttribute("width", "25%");
 
   imagesContainer.appendChild(imgTongs);
-  imagesContainer.appendChild(imgHotpot);
-  imagesContainer.appendChild(imgIngredients);
+  imagesContainer.appendChild(imgDrizzle);
+  imagesContainer.appendChild(imgSplitBowl);
 
   flexContainer.appendChild(textContainer);
   flexContainer.appendChild(ctaDiv);
