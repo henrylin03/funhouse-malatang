@@ -170,6 +170,7 @@ nav button.selected {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
+    width: min(80vw, 125%);
 }
 
 .hero figure img {
